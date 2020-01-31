@@ -1,0 +1,25 @@
+//CRIA O PACKAGE.JSON
+  yarn init -y
+
+
+//ADICIONA PACOTE DE DEPENDENCIAS
+ * Express é o pacote inicial para rodar a aplicação node
+  yarn add express
+
+ * Nodemon para sempre executar o servidor
+  yarn add nodemon -D
+
+  depois adicionar no package.json o script: 
+   "scripts": {
+      "dev": "nodemon index.js"
+   }, 
+ 
+
+//INSTALA TODAS AS DEPENDENCIAS DO PROJETO  
+  yarn
+
+//EXECUTAR SERVIDOR NODE
+  yarn dev
+
+
+
