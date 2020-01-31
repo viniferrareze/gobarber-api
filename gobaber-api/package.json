@@ -1,0 +1,17 @@
+{
+  "name": "gobaber-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "dev:debug": "nodemon --inspect src/server.js"
+  },
+  "devDependencies": {
+    "sucrase": "^3.12.1"
+  }
+}

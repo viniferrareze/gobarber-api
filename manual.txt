@@ -4,22 +4,35 @@
 
 //ADICIONA PACOTE DE DEPENDENCIAS
  * Express é o pacote inicial para rodar a aplicação node
-  yarn add express
+  yarn add express -D
 
- * Nodemon para sempre executar o servidor
+ * Nodemon: para sempre executar o servidor de forma automatica
   yarn add nodemon -D
 
   depois adicionar no package.json o script: 
    "scripts": {
       "dev": "nodemon index.js"
    }, 
- 
+
+  * sucrase: serve para o node entender as novas funcionalidades do JS.
+    deve ser criado um arquivo chamado: nodemon.json e adicionar:
+      {
+        "execMap": {
+            "js": "node -r sucrase/register"
+        }
+      }
+    no package.json nos scripts adicionar: 
+      "dev:debug": "nodemon --inspect src/server.js"
+
+    para se executar o debug ao clicar no icone de debugg do vs code, ir nas configurações 
+    e trocar o valor da variavel "request" para "attach". Remover a variavel "program" e adicionar
+    a variavel "protocol" com o valor "inspector";  e para sempre executar o debug quando atualizar 
+    o codigo fonte so adicionar a variavel "restart" com o valor "true";
 
 //INSTALA TODAS AS DEPENDENCIAS DO PROJETO  
   yarn
 
 //EXECUTAR SERVIDOR NODE
   yarn dev
-
 
 
