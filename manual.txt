@@ -29,6 +29,12 @@
     a variavel "protocol" com o valor "inspector";  e para sempre executar o debug quando atualizar 
     o codigo fonte so adicionar a variavel "restart" com o valor "true";
 
+  * sequelize: é o ORM de banco de dados
+     yarn add sequelize
+
+  * sequelize-cli: é interface de linha de comando
+     yarn add sequelize-cli -D
+
 //INSTALA TODAS AS DEPENDENCIAS DO PROJETO  
   yarn
 
@@ -38,3 +44,15 @@
 
 //INSTALAR POSTGRESS VIA DOCKER POR TERMINHAL:
 docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+
+*********************************
+PARA CONFIGURAR PADRÕES DE CÓDIGO NO PROJETO
+
+1º Instalar a dependencia "eslint", isso vai verificar se o código esta seguindo o padrão estabelecido
+  yarn add eslint -D
+
+2º rodar o comando abaixo para iniciar o arquivo de configuração
+  yarn eslint --init
+
+3º Instalar a dependencia 
+  yarn add prettier eslint-config-prettier eslint-plugin-prettier -D

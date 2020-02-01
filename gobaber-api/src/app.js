@@ -2,22 +2,21 @@ import express from 'express';
 import routes from './routes';
 
 class App {
-   constructor(){
-      this.server = express();
+  constructor() {
+    this.server = express();
 
-      this.middlewares();
-      this.routes();
-   }
+    this.middlewares();
+    this.routes();
+  }
 
-   middlewares(){
-      this.server.use(express.json());
+  middlewares() {
+    this.server.use(express.json());
+  }
 
-   }
-
-   routes(){
-      //chama o middlewares das rotas...
-      this.server.use(routes);
-   }
+  routes() {
+    // chama o middlewares das rotas...
+    this.server.use(routes);
+  }
 }
 
 export default new App().server;
