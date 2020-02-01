@@ -34,6 +34,9 @@
 
   * sequelize-cli: é interface de linha de comando
      yarn add sequelize-cli -D
+  
+  * pg e pg-hstore: quando utilizar o sequelize do postgres deve ser adicionado essas DEPENDENCIAS
+    yarn add pg pg-hstore
 
 //INSTALA TODAS AS DEPENDENCIAS DO PROJETO  
   yarn
