@@ -38,6 +38,9 @@
   * pg e pg-hstore: quando utilizar o sequelize do postgres deve ser adicionado essas DEPENDENCIAS
     yarn add pg pg-hstore
 
+  * bcryptjs: responsavel por realizar criptografia 
+    yarn add bcryptjs
+
 //INSTALA TODAS AS DEPENDENCIAS DO PROJETO  
   yarn
 
