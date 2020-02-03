@@ -41,6 +41,9 @@
   * bcryptjs: responsavel por realizar criptografia 
     yarn add bcryptjs
 
+  * jsonwebtoken: responsavel pelo jwt
+    yarn add jsonwebtoken
+
 //INSTALA TODAS AS DEPENDENCIAS DO PROJETO  
   yarn
 
