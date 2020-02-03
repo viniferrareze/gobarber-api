@@ -59,3 +59,18 @@ PARA CONFIGURAR PADRÕES DE CÓDIGO NO PROJETO
 
 3º Instalar a dependencia 
   yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+
+*************************
+COMANDOS DO SEQUELIZE-CLI
+
+//CRIAR MIGRATIONS
+  yarn sequelize migration:create --name=create-users
+
+//RODAR AS MIGRATIONS:
+  yarn sequelize db:migrate
+
+//REMOVER MIGRATIONS ANTERIOR
+  yarn sequelize db:migrate:undo
+
+//REMOVER TODAS MIGRATIONS
+  yarn sequelize db:migrate:undo:all
