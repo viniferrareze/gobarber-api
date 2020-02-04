@@ -44,6 +44,9 @@
   * jsonwebtoken: responsavel pelo jwt
     yarn add jsonwebtoken
 
+  * yup: biblioteca para realizar validações
+    yarn add yup
+
 //INSTALA TODAS AS DEPENDENCIAS DO PROJETO  
   yarn
 
