@@ -47,6 +47,8 @@
   * yup: biblioteca para realizar validações
     yarn add yup
 
+  * date-fns: biblioteca para se trabalhar com datas.
+
 //INSTALA TODAS AS DEPENDENCIAS DO PROJETO  
   yarn
 
