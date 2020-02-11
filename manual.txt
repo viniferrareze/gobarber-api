@@ -55,7 +55,6 @@
 //EXECUTAR SERVIDOR NODE
   yarn dev
 
-
 //INSTALAR POSTGRESS VIA DOCKER POR TERMINHAL:
 docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 
@@ -97,3 +96,16 @@ ENVIO DE EMAILS
   
   * nodemailer-express-handlebars: integração do nodemailer com o handlebars
     yarn add nodemailer-express-handlebars
+
+*********************
+REDIS BANCO NÃO RELACIONAL
+  somente salva chave e valor é mais performatico que o mongo
+
+  //INSTALAR VIA TERMINAL:
+    docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
+
+  //bee-queue: biblioteca para gerenciamento de filas
+
+*********************
+
+
