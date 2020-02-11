@@ -85,3 +85,15 @@ COMANDOS DO SEQUELIZE-CLI
 
 //REMOVER TODAS MIGRATIONS
   yarn sequelize db:migrate:undo:all
+
+*********************
+ENVIO DE EMAILS
+
+  * nodemailer: biblioteca para envio de emails
+    yarn add nodemailer 
+
+  * express-handlebars: biblioteca para template de emails
+    yarn add express-handlebars
+  
+  * nodemailer-express-handlebars: integração do nodemailer com o handlebars
+    yarn add nodemailer-express-handlebars
