@@ -107,5 +107,14 @@ REDIS BANCO NÃO RELACIONAL
   //bee-queue: biblioteca para gerenciamento de filas
 
 *********************
+TRATAMENTO DE EXCEÇÕES
+   usado para tratar os erros quando estiver em produções, sentry é uma das ferramentas utilizadas
 
+   //criar conta no sentry
+
+   //express-async-errors: tem erro que nao identifica o asncy
+      yarn add express-async-errors
+
+   //youch: faz a tratativa das mensagem de erro para o desenvolvedor
+      yarn add youch
 
