@@ -118,3 +118,11 @@ TRATAMENTO DE EXCEÇÕES
    //youch: faz a tratativa das mensagem de erro para o desenvolvedor
       yarn add youch
 
+
+*********************
+VARIAVEIS DE AMBIENTES
+
+   //criar o arquivo .env e definir suas VARIAVEIS
+
+   //dotenv: utilizar para chamar o arquivo .env
+      yarn add dotenv
