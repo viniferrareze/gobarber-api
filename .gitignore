@@ -1,3 +1,23 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+
+@viniferrareze
+viniferrareze
+/
+gobarber-api
+1
+00
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
+gobarber-api/.gitignore
+@viniferrareze viniferrareze feat: configurado estrutura e adicionado biblioteca nodemon e sucrase
+4d3fa85 21 days ago
+110 lines (79 sloc)  1.74 KB
+
 # Created by https://www.gitignore.io/api/node
 # Edit at https://www.gitignore.io/?templates=node
 
@@ -108,3 +128,15 @@ tmp/
 temp/
 
 # End of https://www.gitignore.io/api/node
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

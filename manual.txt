@@ -58,6 +58,9 @@
 //INSTALAR POSTGRESS VIA DOCKER POR TERMINHAL:
 docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 
+//INSTALAR MONGO VIA DOCKER POR TERMINAL
+docker run --name mongobarber -p 27017:27017 -d -t mongo
+
 *********************************
 PARA CONFIGURAR PADRÕES DE CÓDIGO NO PROJETO
 
@@ -69,6 +72,11 @@ PARA CONFIGURAR PADRÕES DE CÓDIGO NO PROJETO
 
 3º Instalar a dependencia 
   yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+
+4º rodar o comando abaixo para fix automatico em varios aquivos na pasta
+  yarn eslint --fix src --ext .js
+
+5º Configurar o arquivo .editorconfig instalando a extenção editor config pelo vs code.
 
 *************************
 COMANDOS DO SEQUELIZE-CLI
@@ -85,8 +93,17 @@ COMANDOS DO SEQUELIZE-CLI
 //REMOVER TODAS MIGRATIONS
   yarn sequelize db:migrate:undo:all
 
+//CRIAR UM SEED
+  essa funcionalidade serve para criarmos registros na base de dados de forma automatizada.
+  yarn sequelize seed:generate --name admin-user
+
+//RODAS AS SEEDS
+  yarn sequelize db:seed:all
+
 *********************
 ENVIO DE EMAILS
+
+  Mailtrap somente em ambiente de desenvolvimento
 
   * nodemailer: biblioteca para envio de emails
     yarn add nodemailer 
